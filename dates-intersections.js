@@ -1,8 +1,8 @@
-var getDatesIntersections = function (participants) {
+ï»¿var getDatesIntersections = function (participants) {
     var dates = [];
 
-    // 1. copie des dates de début et de fin dans un tableaux.
-    $('#process').append('<li>Copie des dates de début et de fin dans un tableau.</li>');
+    // 1. copie des dates de dÃ©but et de fin dans un tableaux.
+    $('#process').append('<li>Copie des dates de dÃ©but et de fin dans un tableau.</li>');
     for (var i = 0; i < participants.length; i++) {
 
         // start dates
@@ -31,7 +31,7 @@ var getDatesIntersections = function (participants) {
     var sortedDates = bubbleSort(dates);
 
     // 3. On calcule les intervalles 
-    $('#process').append('<li>On crée un nouveau tableau contenant tous les intervalles (soit [(t0,t1), (t1,t2), ..., (tn, tn+1)]).</li>');
+    $('#process').append('<li>On crÃ©e un nouveau tableau contenant tous les intervalles (soit [(t0,t1), (t1,t2), ..., (tn, tn+1)]).</li>');
     var intervals = [];
     for (var i = 0; i < sortedDates.length - 1; i++) {
         intervals.push({
@@ -58,9 +58,9 @@ var getDatesIntersections = function (participants) {
             html += '<ul>';
 
             if (intervals[i].start >= participants[j].start && intervals[i].end <= participants[j].end) {
-                console.log("1 date trouvée");
+                console.log("1 date trouvÃ©e");
                 intersect++;
-                html += '<li>1 date trouvée! nb = ' + intersect + '</li>';
+                html += '<li>1 date trouvÃ©e! nb = ' + intersect + '</li>';
             }
             html += '</ul>';
         }
@@ -75,7 +75,7 @@ var getDatesIntersections = function (participants) {
 
     $('#process').append(html);
 
-    $('#result').append('<p>Nb max de participants en simultané = ' + maxIntersect + '</p>');
+    $('#result').append('<p>Nb max de participants en simultanÃ© = ' + maxIntersect + '</p>');
 }
 
 
