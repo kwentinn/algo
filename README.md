@@ -1,5 +1,4 @@
-# algo
-Divers algorithmes
+# algo - Divers algorithmes
 
 Intersections de dates: https://jsfiddle.net/2nLtdpm8/8/
 
